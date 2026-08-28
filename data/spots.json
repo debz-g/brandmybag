@@ -39,7 +39,7 @@
       "currentBidInr": 1000,
       "currentHolder": null,
       "paymentLink": "",
-      "rect": { "x": 61, "y": 652, "w": 190, "h": 190 }
+      "rect": { "x": 118, "y": 650, "w": 180, "h": 205 }
     },
     {
       "id": "right-of-indicator",
@@ -52,7 +52,7 @@
       "currentBidInr": 1000,
       "currentHolder": null,
       "paymentLink": "",
-      "rect": { "x": 361, "y": 652, "w": 190, "h": 190 }
+      "rect": { "x": 318, "y": 650, "w": 185, "h": 205 }
     },
     {
       "id": "side-left",
@@ -67,7 +67,7 @@
       "currentBidInr": 800,
       "currentHolder": null,
       "paymentLink": "",
-      "rect": { "x": 380, "y": 177, "w": 280, "h": 520 }
+      "rect": { "x": 470, "y": 230, "w": 300, "h": 560 }
     },
     {
       "id": "side-right",
@@ -82,7 +82,7 @@
       "currentBidInr": 800,
       "currentHolder": null,
       "paymentLink": "",
-      "rect": { "x": 380, "y": 177, "w": 280, "h": 520 }
+      "rect": { "x": 470, "y": 230, "w": 300, "h": 560 }
     }
   ]
 }
