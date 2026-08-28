@@ -47,7 +47,7 @@ function renderFrontView(view, container) {
   wrap.appendChild(label);
 
   const map = document.createElement("div");
-  map.className = "spot-map";
+  map.className = "spot-map spot-map--narrow";
 
   const inner = document.createElement("div");
   inner.className = "spot-map-inner";

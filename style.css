@@ -207,6 +207,10 @@ section { padding: 64px 0; }
   overflow: hidden;
   background: var(--bg-alt);
 }
+.spot-map--narrow {
+  max-width: 68%;
+  margin: 0 auto;
+}
 .spot-map-inner {
   position: relative;
   width: 100%;
