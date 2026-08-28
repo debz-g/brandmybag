@@ -1,0 +1,88 @@
+{
+  "goal": {
+    "targetInr": 25000
+  },
+  "views": [
+    {
+      "id": "front",
+      "label": "Front",
+      "image": { "src": "assets/images/camo-1.jpg", "width": 626, "height": 1004 }
+    },
+    {
+      "id": "side",
+      "label": "Side",
+      "image": { "src": "assets/images/camo-3.jpg", "width": 821, "height": 1010 }
+    }
+  ],
+  "spots": [
+    {
+      "id": "upper-panel",
+      "viewId": "front",
+      "name": "Upper Panel",
+      "tier": "Premium",
+      "size": "14 x 9 cm",
+      "note": "Biggest flat surface, eye-level to whoever's behind you in traffic",
+      "startingBidInr": 2000,
+      "currentBidInr": 2000,
+      "currentHolder": null,
+      "paymentLink": "",
+      "rect": { "x": 71, "y": 362, "w": 460, "h": 270 }
+    },
+    {
+      "id": "left-of-indicator",
+      "viewId": "front",
+      "name": "Left of Indicator",
+      "tier": "Standard",
+      "size": "7 x 8 cm",
+      "note": "Flanks the charging LED strip on the left",
+      "startingBidInr": 1000,
+      "currentBidInr": 1000,
+      "currentHolder": null,
+      "paymentLink": "",
+      "rect": { "x": 61, "y": 652, "w": 190, "h": 190 }
+    },
+    {
+      "id": "right-of-indicator",
+      "viewId": "front",
+      "name": "Right of Indicator",
+      "tier": "Standard",
+      "size": "7 x 8 cm",
+      "note": "Flanks the charging LED strip on the right",
+      "startingBidInr": 1000,
+      "currentBidInr": 1000,
+      "currentHolder": null,
+      "paymentLink": "",
+      "rect": { "x": 361, "y": 652, "w": 190, "h": 190 }
+    },
+    {
+      "id": "side-left",
+      "viewId": "side",
+      "side": "left",
+      "mirror": true,
+      "name": "Left Side Panel",
+      "tier": "Standard",
+      "size": "10 x 14 cm",
+      "note": "Full side panel, visible from the left in traffic and on the shoulder",
+      "startingBidInr": 800,
+      "currentBidInr": 800,
+      "currentHolder": null,
+      "paymentLink": "",
+      "rect": { "x": 380, "y": 177, "w": 280, "h": 520 }
+    },
+    {
+      "id": "side-right",
+      "viewId": "side",
+      "side": "right",
+      "mirror": false,
+      "name": "Right Side Panel",
+      "tier": "Standard",
+      "size": "10 x 14 cm",
+      "note": "Full side panel, visible from the right in traffic and on the shoulder",
+      "startingBidInr": 800,
+      "currentBidInr": 800,
+      "currentHolder": null,
+      "paymentLink": "",
+      "rect": { "x": 380, "y": 177, "w": 280, "h": 520 }
+    }
+  ]
+}

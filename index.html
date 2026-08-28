@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BrandMyBag — ad space on my backpack</title>
+<meta name="description" content="Auctioning ad spots on my backpack, ridden daily through Outer Ring Road traffic between HSR Layout and Prestige Tech Park. An honest experiment in riding a bandwagon." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="wordmark">Brand<span>My</span>Bag</a>
+    <nav>
+      <a href="#bag">The Bag</a>
+      <a href="#spots">Spots</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#spots" class="btn btn-primary btn-small">Claim a spot</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">an honest experiment</p>
+      <h1>I spend 3 hours a day stuck on the Outer Ring Road.<br>Might as well make it pay.</h1>
+      <p class="hero-sub">
+        Everyone's doing <a href="https://brandmymac.com" target="_blank" rel="noopener">BrandMyMac</a> right now. I don't have a MacBook to sell —
+        I have a backpack that rides HSR Layout → Prestige Tech Park in traffic every weekday.
+        Selling ad spots on it, live, to see if this works for a nobody too.
+      </p>
+      <div class="hero-cta">
+        <a href="#spots" class="btn btn-primary">See the spots</a>
+        <a href="#how" class="btn btn-ghost">How it works</a>
+      </div>
+      <div class="stat-bar" id="stat-bar">
+        <div class="stat">
+          <span class="stat-value" id="stat-raised">₹0</span>
+          <span class="stat-label">raised</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-goal">of ₹25,000</span>
+          <span class="stat-label">goal</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="stat-spots">0 / 5</span>
+          <span class="stat-label">spots claimed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bag" class="bag-section">
+    <div class="wrap">
+      <h2 class="section-title">The bag</h2>
+      <p class="section-sub">Click a spot to see exactly where your logo goes — and preview it on the full bag before you pay.</p>
+
+      <div class="bag-layout">
+        <div class="spot-maps" id="spot-maps"></div>
+        <div class="spot-list" id="spot-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spots" class="spots-section">
+    <div class="wrap">
+      <h2 class="section-title">Live spots</h2>
+      <p class="section-sub">Starting bids are deliberately low. First bids matter more than big ones right now.</p>
+      <div class="spots-grid" id="spots-grid"></div>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <div class="wrap">
+      <h2 class="section-title">How it works</h2>
+      <div class="how-grid">
+        <div class="how-step">
+          <span class="how-num">1</span>
+          <h3>Pick a spot</h3>
+          <p>Five spots across the bag's front and side panels, priced by size and visibility. Preview your logo on the full bag first.</p>
+        </div>
+        <div class="how-step">
+          <span class="how-num">2</span>
+          <h3>Pay to claim it</h3>
+          <p>Claiming a spot pays the current bid via a Razorpay link. Get outbid, and whoever's next has to beat your price.</p>
+        </div>
+        <div class="how-step">
+          <span class="how-num">3</span>
+          <h3>Your logo rides along</h3>
+          <p>Printed as a sticker, applied within a couple of days, and it travels with me through Outer Ring Road traffic until someone outbids you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <h2 class="section-title">FAQ</h2>
+      <details>
+        <summary>Is this real?</summary>
+        <p>Yes. It's also explicitly an experiment — I'm curious whether a format like this works without an existing audience, not just for accounts that already went viral.</p>
+      </details>
+      <details>
+        <summary>What happens if I get outbid?</summary>
+        <p>I'll reach out about a refund path or you can immediately place a higher bid to reclaim the spot.</p>
+      </details>
+      <details>
+        <summary>Are you affiliated with Arctic Fox?</summary>
+        <p>No. This is an independent, unaffiliated project. Bag photos are the manufacturer's listing photos used as placeholders during setup, and will be replaced with my own photos of my own bag.</p>
+      </details>
+      <details>
+        <summary>How long does a spot last?</summary>
+        <p>Until someone outbids you. No fixed end date — this isn't a 14-day auction, it's ongoing.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Built by Debayan · <a href="https://x.com/debz_exe" target="_blank" rel="noopener">@debz_exe</a></p>
+    <p class="footer-legal">
+      <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a>
+    </p>
+    <p class="disclaimer">Not affiliated with Arctic Fox. Independent, unofficial experiment.</p>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal modal-wide">
+    <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+    <h3 id="modal-title">Claim this spot</h3>
+
+    <div class="preview-wrap">
+      <div class="preview-full" id="preview-full">
+        <img id="preview-bg" alt="" />
+        <div class="preview-overlay" id="preview-overlay">
+          <span id="preview-placeholder">your logo here</span>
+        </div>
+      </div>
+      <label class="preview-upload">
+        <input type="file" id="logo-upload" accept="image/*" hidden />
+        Upload a logo to preview it on the bag
+      </label>
+    </div>
+
+    <p id="modal-body"></p>
+    <a href="#" id="modal-pay-btn" class="btn btn-primary" target="_blank" rel="noopener">Pay ₹— to claim</a>
+    <p class="modal-note">Payment link opens in a new tab via Razorpay.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
